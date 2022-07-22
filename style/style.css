@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+header .left-section {
+  height: 90vh;
+  width: 60%;
+  background-color: white;
+}
+header .left-section .navebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .left-section .navebar #logo {
+  display: flex;
+  flex-direction: row;
+}
+header .left-section .navebar #logo img {
+  width: 70px;
+}
+header .left-section .navebar #logo span {
+  margin: auto 2px;
+  font-weight: bold;
+  font-size: 25px;
+}
+header .left-section .navebar .toggle {
+  width: 50px;
+  height: 50px;
+  background-image: url("../image/menu.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  display: none;
+  float: right;
+}
+header .left-section .navebar nav {
+  width: 70%;
+  margin: auto 0px;
+}
+header .left-section .navebar nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .left-section .navebar nav ul li {
+  list-style: none;
+}
+header .left-section .navebar nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(230, 253, 247);
+  width: 100px;
+  text-align: center;
+  color: rgb(1, 11, 43);
+  border: 2px solid rgb(255, 255, 255);
+}
+header .left-section .navebar nav ul li a:hover {
+  border: 1px solid rgb(60, 209, 152);
+  background-color: rgba(227, 250, 245, 0.897);
+  box-shadow: 1px 1px 5px grey;
+}
+header .left-section .navebar nav ul li .active {
+  border: 2px solid rgb(60, 209, 152);
+  box-shadow: 1px 1px 5px rgb(184, 253, 238);
+}
+header .left-section .navebar .logo {
+  width: 30%;
+}
+header .right-section {
+  width: 40%;
+  background-color: rgb(0, 255, 191);
+  height: 90vh;
+  overflow: clip;
+}
+header .right-section nav {
+  width: 70%;
+  margin-top: 20px;
+  float: right;
+}
+header .right-section nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header .right-section nav ul li {
+  list-style: none;
+}
+header .right-section nav ul li a {
+  text-decoration: none;
+  color: rgb(1, 11, 43);
+}
+header .right-section nav ul .book-now {
+  background-color: rgb(28, 49, 45);
+  padding: 8px 16px;
+  color: white;
+  border: 1px inset white;
+}
+header .right-section nav ul .book-now:hover {
+  box-shadow: 0px 0px 10px rgb(153, 152, 152);
+  background-color: rgb(55, 0, 156);
+}
+header .right-section .right-section-child {
+  width: 50%;
+  height: 50%;
+  margin: 40px auto;
+}
+header .right-section .right-section-child i {
+  background-color: rgb(28, 49, 45);
+  font-size: 16px;
+  color: white;
+  padding: 16px;
+  margin: 20px 0px;
+}
+header .right-section .right-section-child p {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgb(59, 69, 73);
+}
+header .right-section .circle1 {
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: -100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+}
+
+.over-image {
+  position: absolute;
+  display: block;
+  top: 10%;
+  right: 12%;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 80%;
+}
+
+.bottum-card {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(28, 49, 45);
+}
+
+.left-section-child {
+  width: 60%;
+  height: 50%;
+  margin-left: 10%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.left-section-child .intro-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 50%;
+}
+.left-section-child .intro-point i {
+  size: 40px;
+  margin-right: 20px;
+}
+.left-section-child .intro-point span {
+  color: rgb(37, 34, 46);
+}
+.left-section-child .book-now {
+  background-color: rgb(28, 49, 45);
+  color: white;
+  padding: 12px 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px inset white;
+}
+.left-section-child .book-now:hover {
+  box-shadow: 0px 0px 10px rgb(94, 88, 88);
+  background-color: rgb(55, 0, 156);
+}
+.left-section-child div h1 {
+  color: rgb(23, 21, 27);
+  font-size: 2em;
+}
+.left-section-child div p {
+  font-size: 12px;
+  color: grey;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.happy-comment-card {
+  position: absolute;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  border-radius: 8px;
+  top: 60%;
+  box-shadow: 0px 0px 5px rgba(185, 184, 184, 0.856);
+}
+.happy-comment-card i {
+  margin: auto 8px;
+  font-size: 20px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+.happy-comment-card div {
+  text-align: center;
+}
+.happy-comment-card div h2 {
+  font-size: 20px;
+}
+.happy-comment-card div p {
+  font-size: 12px;
+  color: rgb(37, 32, 32);
+}
+
+.faq-card {
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 50px;
+  box-shadow: 0px 0px 10px rgba(167, 165, 165, 0.815);
+  background-image: url("../image/faq-world.png");
+  background-repeat: no-repeat;
+  fill-opacity: 0.5;
+}
+.faq-card .faq-image {
+  width: 60%;
+}
+.faq-card .faq-question {
+  background-color: rgba(255, 255, 255, 0.781);
+}
+.faq-card .faq-question details {
+  border: 1px solid rgba(44, 34, 34, 0.781);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.faq-card .faq-question details summary {
+  font-weight: 600;
+  font-size: 16px;
+  overflow: hidden;
+}
+.faq-card .faq-question details p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(49, 49, 66);
+}
+.faq-card .faq-question details:hover {
+  background-color: white;
+}
+
+footer {
+  background-color: rgb(28, 49, 45);
+}
+footer .ft-child-section-1 {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .ft-child-section-1 .ft-child-section-1-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .brand-name {
+  display: flex;
+  flex-direction: row;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .brand-name h1 {
+  margin: auto 2px;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .social-link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .social-link h3 {
+  font-size: 16px;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .social-link .social-icons {
+  margin-top: 20px;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .social-link .social-icons a {
+  padding: 12px;
+  background-color: white;
+}
+footer .ft-child-section-1 .ft-child-section-1-left .social-link .social-icons a i {
+  color: rgb(28, 49, 45);
+}
+footer .ft-child-section-1 .ft-child-section-1-right {
+  padding: 50px 30px;
+  border-radius: 15px;
+  background-color: rgb(231, 255, 251);
+  margin: 50px;
+  color: black;
+  width: 50%;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container h2 {
+  width: 48%;
+  color: rgb(28, 49, 45);
+  text-align: center;
+  margin: auto 1%;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn {
+  background-color: rgb(248, 250, 248);
+  border-radius: 8px;
+  height: 50px;
+  box-shadow: 0px 0px 10px rgba(177, 176, 176, 0.801);
+  width: 50%;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn .input-email {
+  width: 65%;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 20px;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn .input-email:focus {
+  outline: none;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn .submit-btn {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(28, 49, 45);
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  float: right;
+  color: white;
+  font-weight: 600;
+}
+footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn .submit-btn:hover {
+  background-color: rgba(28, 49, 45, 0.863);
+}
+footer .ft-child-section-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px;
+}
+footer .ft-child-section-3 h2 {
+  color: white;
+  font-weight: 500;
+  width: 50%;
+}
+footer .ft-child-section-3 .terms-condition {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .ft-child-section-3 .terms-condition a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer .ft-child-section-3 .terms-condition a:hover {
+  text-decoration: underline;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+/* On screens that are 600px or less, set the background color to olive *//*# sourceMappingURL=style.css.map */
