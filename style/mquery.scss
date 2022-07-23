@@ -1,5 +1,4 @@
 @media (max-width: 1170px) {
-    
     header {
         flex-direction: column;
         .left-section {
@@ -9,6 +8,7 @@
             .navebar {
                 background-color: white;
                 width: inherit;
+                z-index: 300;
                 nav {
                     width: 75%;
                     margin: auto 0px;
@@ -34,8 +34,7 @@
                 top: 135%;
                 background-color: rgb(255, 208, 0);
                 box-shadow: 5px 5px 0px orange;
-                
-
+                z-index: 200;
             }
             .right-section-child {
                 width: 40%;
@@ -45,14 +44,13 @@
                 background-color: white;
                 padding: 20px;
                 margin-top: 20px;
-               
             }
         }
     }
     .over-image {
         // position: static;
         top: 90%;
-         right: 45%;
+        right: 45%;
         height: 60%;
     }
     .happy-comment-card {
@@ -64,15 +62,15 @@
 
 /* On screens that are 600px or less, set the background color to olive */
 @media (max-width: 768px) {
-  
     header {
         flex-direction: column;
         .left-section {
             width: 100%;
+            height: 70vh;
 
             .navebar {
                 background-color: white;
-
+z-index: 300;
                 #logo {
                     width: 50%;
                     display: flex;
@@ -86,7 +84,7 @@
                         font-size: 20px;
                     }
                 }
-    
+
                 nav {
                     width: 75%;
                     margin: auto 0px;
@@ -107,11 +105,10 @@
             }
             .left-section-child {
                 background-color: rgba(210, 252, 238, 0.664);
-                margin-top: 20px;
+                margin: 80px auto;
                 padding: 20px;
                 width: 80%;
-                margin: 20px auto;
-           
+              
             }
         }
         .right-section {
@@ -120,20 +117,19 @@
             nav {
                 width: fit-content;
                 right: 0px;
-                top: 145%;
-                li{
-                    margin:10px;
-                    i{
+                top: 120%;
+                z-index: 200;
+                li {
+                    margin: 10px;
+                    i {
                         color: rgb(3, 36, 27);
                         background-color: white;
                         padding: 5px;
                     }
-
                 }
-              
             }
             .right-section-child {
-                width: 40%;
+                width: 50%;
                 height: fit-content;
                 margin-right: 1%;
                 border-radius: 8px;
@@ -145,17 +141,16 @@
     }
     .over-image {
         // position: static;
-        top: 100%;
-         right: 45%;
+        top: 80%;
+        right: 45%;
         height: 60%;
     }
     .happy-comment-card {
         // position: static;
-        top: 128%;
+        top: 110%;
         right: 45%;
     }
 
-    
     footer {
         .ft-child-section-1 {
             flex-direction: column;
@@ -169,7 +164,6 @@
                 padding: 40px 10px;
                 border-radius: 8px;
                 .email-container {
-         
                     flex-direction: row;
 
                     width: 100%;
@@ -196,14 +190,13 @@
                 }
             }
         }
-        .ft-child-section-3{
+        .ft-child-section-3 {
             flex-direction: column;
-            h2{
+            h2 {
                 width: 100%;
                 font-size: 20px;
-                
             }
-            .terms-condition{
+            .terms-condition {
                 width: 100%;
                 margin-top: 20px;
             }
@@ -215,19 +208,20 @@
     #toggleBtn {
         display: block;
     }
-    .happy-comment-card {
-        top: 135%;
-        right: 33%;
-    }
-    .left-section {
-        .left-section-child{
-            width: 80%;
-           margin: 20px auto;
-            div{
-                h1{font-size: 20px;
+ 
+    header{
+         .left-section {
+height: 70vh;
+        .left-section-child {
+            width: 90%;
+       
+            margin: 80px auto;
+            div {
+                h1 {
+                    font-size: 20px;
                 }
             }
-            .book-now{
+            .book-now {
                 font-size: 16px;
             }
         }
@@ -252,10 +246,11 @@
                 display: none;
                 width: 70%;
                 margin: auto 0px;
-                top: 7%;
+                top: 50px;
                 position: absolute;
                 right: 0;
                 background-color: white;
+                z-index: 300;
 
                 ul {
                     height: 100%;
@@ -287,51 +282,57 @@
             }
         }
     }
-header{
-
-    .right-section{
-        height: 70vh;
-        nav{
-            height: fit-content;
-            padding: 0px;
-            ul{
-                 display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            height: fit-content;
-        margin: 10px;
-           li{
-    
-            margin: 10px 0px 0px;
-           }
-            li a{
-                font-size: 12px;
-            }
-            li button{
-                font-size: 12px;
-            }
-            }
-           
-        }
-        .right-section-child{
-            width: 60%;
-        }
-    
-        .over-image {
-        width: 50%;
-        height: 50%;
-        top: 110%;
-        right: 43%;
-    } 
-    .circle1{
-        float: right;
     }
-    } 
-}
+   
+    header {
+        .right-section {
+            height: 50vh;
+            nav {
+                height: fit-content;
+                padding: 0px;
+                margin-bottom: 35px;
+                z-index: 100;
+                top: 113%;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: center;
+                    height: fit-content;
+                    margin: 0px;
+                    padding: 5px 0px;
+                    li {
+                        margin:0px 10px;
+                        i{background-color: transparent;}
+                    }
+                    li a {
+                        font-size: 12px;
+                    }
+                    li button {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .right-section-child {
+                margin-top: 20px;
+                width: 60%;
+            }
 
-   
-    
-   
+            .over-image {
+                width: 40%;
+                height: 30%;
+                top: 90%;
+                right: 60%;
+            }
+            .circle1 {
+                float: right;
+            }
+        }
+    }
+    .happy-comment-card {
+        
+        top: 105%;
+        right: 40%;
+    }
     .faq-card {
         width: 90%;
         box-shadow: 0px 0px 5px rgba(167, 165, 165, 0.603);
@@ -374,7 +375,6 @@ header{
                 padding: 40px 10px;
                 border-radius: 8px;
                 .email-container {
-         
                     flex-direction: column;
 
                     width: 100%;
@@ -403,14 +403,254 @@ header{
                 }
             }
         }
-        .ft-child-section-3{
+        .ft-child-section-3 {
             flex-direction: column;
-            h2{
+            h2 {
                 width: 100%;
                 font-size: 16px;
-                
             }
-            .terms-condition{
+            .terms-condition {
+                width: 100%;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 394px) {
+    header {
+        .left-section {
+            height: 60vh;
+            .left-section-child {
+                width: 90%;
+                margin: 70px auto;
+
+                div {
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+                .book-now {
+                    font-size: 16px;
+                }
+            }
+
+            .navebar {
+                background-color: white;
+                #logo {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    img {
+                        width: 50px;
+                    }
+                    span {
+                        margin: auto 2px;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+
+                #navbar {
+                    display: none;
+                    width: 70%;
+                    margin: auto 0px;
+                    top: 50px;
+                    position: absolute;
+                    right: 0;
+                    background-color: white;
+
+                    ul {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        margin: 20px 0px;
+                        li {
+                            display: block;
+                            a {
+                                width: 100%;
+                                padding: 20px;
+                            }
+                            a:hover {
+                                background-color: rgb(215, 255, 246);
+                                box-shadow: none;
+                                border: none;
+                            }
+                            .active {
+                                background-color: rgb(215, 255, 246);
+                                border: 1px solid green;
+                                box-shadow: none;
+                            }
+                        } //li
+                    } //ul
+                } //#navbar
+                .logo {
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+    header {
+        .right-section {
+            height: 50vh;
+            nav {
+                height: 50px;
+                padding: 0px;
+                position: static;
+                float: left;
+                box-shadow: -10px 10px 0px orange;
+                display: none;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    height: inherit;
+                    margin: 10px;
+                    li {
+                        margin: 0px;
+                        height: inherit;
+                        i {
+                            display: none;
+                        }
+
+                        a {
+                            display: none;
+                        }
+                        .book-now {
+                            height: inherit;
+                            text-align: center;
+                            padding-bottom: 10px;
+                            font-size: 12px;
+                            margin: 0px;
+                            padding: 0px;
+                            color: rgb(2, 26, 20);
+                            border: none;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            .right-section-child {  padding: 10px;
+                    width: 60%; margin-top: 20px;
+                p{
+                  
+                   text-align: justify;
+                    font-size: 12px;
+                  
+                }
+              
+                i{
+                    font-size: 20px;
+                    padding: 10px;
+                    margin: 10px;
+                }
+            }
+
+            .over-image {
+                height: 30%;
+                top: 80%;
+                right: 50%;
+            }
+            .circle1 {
+                float: right;
+            }
+
+            .happy-comment-card {
+                top: 100%;
+                right: 33%;
+                i{font-size: 16px;
+                padding: 0px;}
+                div{
+                    h2{
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-card {
+        width: 90%;
+        box-shadow: 0px 0px 5px rgba(167, 165, 165, 0.603);
+
+        .faq-image {
+            width: 60%;
+        }
+
+        .faq-question {
+            details {
+                padding: 10px 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+
+                summary {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            details:hover {
+                background-color: white;
+            }
+        }
+    }
+
+    footer {
+        .ft-child-section-1 {
+            flex-direction: column;
+            .ft-child-section-1-left {
+                width: 90%;
+                margin: 5%;
+            }
+            .ft-child-section-1-right {
+                width: 90%;
+                margin: 20px auto;
+                padding: 40px 10px;
+                border-radius: 8px;
+                .email-container {
+                    flex-direction: column;
+
+                    width: 100%;
+                    h2 {
+                        width: 48%;
+                        color: rgb(28, 49, 45);
+                        text-align: center;
+                        margin: 20px auto;
+                        font-size: 20px;
+                        width: 90%;
+                    }
+                    .email-btn {
+                        height: 40px;
+                        width: 90%;
+                        margin: 0px auto;
+
+                        .input-email {
+                            padding-left: 10px;
+                            font-size: 16px;
+                        }
+
+                        .submit-btn {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .ft-child-section-3 {
+            flex-direction: column;
+            h2 {
+                width: 100%;
+                font-size: 16px;
+            }
+            .terms-condition {
                 width: 100%;
                 margin-top: 12px;
             }

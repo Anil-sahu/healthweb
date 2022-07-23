@@ -10,6 +10,7 @@
   header .left-section .navebar {
     background-color: white;
     width: inherit;
+    z-index: 300;
   }
   header .left-section .navebar nav {
     width: 75%;
@@ -37,6 +38,7 @@
     top: 135%;
     background-color: rgb(255, 208, 0);
     box-shadow: 5px 5px 0px orange;
+    z-index: 200;
   }
   header .right-section .right-section-child {
     width: 40%;
@@ -66,9 +68,11 @@
   }
   header .left-section {
     width: 100%;
+    height: 70vh;
   }
   header .left-section .navebar {
     background-color: white;
+    z-index: 300;
   }
   header .left-section .navebar #logo {
     width: 50%;
@@ -100,10 +104,9 @@
   }
   header .left-section .left-section-child {
     background-color: rgba(210, 252, 238, 0.664);
-    margin-top: 20px;
+    margin: 80px auto;
     padding: 20px;
     width: 80%;
-    margin: 20px auto;
   }
   header .right-section {
     width: 100%;
@@ -114,7 +117,8 @@
     width: -moz-fit-content;
     width: fit-content;
     right: 0px;
-    top: 145%;
+    top: 120%;
+    z-index: 200;
   }
   header .right-section nav li {
     margin: 10px;
@@ -125,7 +129,7 @@
     padding: 5px;
   }
   header .right-section .right-section-child {
-    width: 40%;
+    width: 50%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -136,12 +140,12 @@
     margin-top: 10%;
   }
   .over-image {
-    top: 100%;
+    top: 80%;
     right: 45%;
     height: 60%;
   }
   .happy-comment-card {
-    top: 128%;
+    top: 110%;
     right: 45%;
   }
   footer .ft-child-section-1 {
@@ -195,91 +199,98 @@
   #toggleBtn {
     display: block;
   }
-  .happy-comment-card {
-    top: 135%;
-    right: 33%;
+  header .left-section {
+    height: 70vh;
   }
-  .left-section .left-section-child {
-    width: 80%;
-    margin: 20px auto;
+  header .left-section .left-section-child {
+    width: 90%;
+    margin: 80px auto;
   }
-  .left-section .left-section-child div h1 {
+  header .left-section .left-section-child div h1 {
     font-size: 20px;
   }
-  .left-section .left-section-child .book-now {
+  header .left-section .left-section-child .book-now {
     font-size: 16px;
   }
-  .left-section .navebar {
+  header .left-section .navebar {
     background-color: white;
   }
-  .left-section .navebar #logo {
+  header .left-section .navebar #logo {
     width: 50%;
     display: flex;
     flex-direction: row;
   }
-  .left-section .navebar #logo img {
+  header .left-section .navebar #logo img {
     width: 50px;
   }
-  .left-section .navebar #logo span {
+  header .left-section .navebar #logo span {
     margin: auto 2px;
     font-weight: bold;
     font-size: 20px;
   }
-  .left-section .navebar #navbar {
+  header .left-section .navebar #navbar {
     display: none;
     width: 70%;
     margin: auto 0px;
-    top: 7%;
+    top: 50px;
     position: absolute;
     right: 0;
     background-color: white;
+    z-index: 300;
   }
-  .left-section .navebar #navbar ul {
+  header .left-section .navebar #navbar ul {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 20px 0px;
   }
-  .left-section .navebar #navbar ul li {
+  header .left-section .navebar #navbar ul li {
     display: block;
   }
-  .left-section .navebar #navbar ul li a {
+  header .left-section .navebar #navbar ul li a {
     width: 100%;
     padding: 20px;
   }
-  .left-section .navebar #navbar ul li a:hover {
+  header .left-section .navebar #navbar ul li a:hover {
     background-color: rgb(215, 255, 246);
     box-shadow: none;
     border: none;
   }
-  .left-section .navebar #navbar ul li .active {
+  header .left-section .navebar #navbar ul li .active {
     background-color: rgb(215, 255, 246);
     border: 1px solid green;
     box-shadow: none;
   }
-  .left-section .navebar .logo {
+  header .left-section .navebar .logo {
     width: 25%;
   }
   header .right-section {
-    height: 70vh;
+    height: 50vh;
   }
   header .right-section nav {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 0px;
+    margin-bottom: 35px;
+    z-index: 100;
+    top: 113%;
   }
   header .right-section nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin: 10px;
+    margin: 0px;
+    padding: 5px 0px;
   }
   header .right-section nav ul li {
-    margin: 10px 0px 0px;
+    margin: 0px 10px;
+  }
+  header .right-section nav ul li i {
+    background-color: transparent;
   }
   header .right-section nav ul li a {
     font-size: 12px;
@@ -288,16 +299,232 @@
     font-size: 12px;
   }
   header .right-section .right-section-child {
+    margin-top: 20px;
     width: 60%;
   }
   header .right-section .over-image {
-    width: 50%;
-    height: 50%;
-    top: 110%;
-    right: 43%;
+    width: 40%;
+    height: 30%;
+    top: 90%;
+    right: 60%;
   }
   header .right-section .circle1 {
     float: right;
+  }
+  .happy-comment-card {
+    top: 105%;
+    right: 40%;
+  }
+  .faq-card {
+    width: 90%;
+    box-shadow: 0px 0px 5px rgba(167, 165, 165, 0.603);
+  }
+  .faq-card .faq-image {
+    width: 60%;
+  }
+  .faq-card .faq-question details {
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .faq-card .faq-question details summary {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .faq-card .faq-question details p {
+    font-size: 12px;
+  }
+  .faq-card .faq-question details:hover {
+    background-color: white;
+  }
+  footer .ft-child-section-1 {
+    flex-direction: column;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-left {
+    width: 90%;
+    margin: 5%;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-right {
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px 10px;
+    border-radius: 8px;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-right .email-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-right .email-container h2 {
+    width: 48%;
+    color: rgb(28, 49, 45);
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+    width: 90%;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn {
+    height: 40px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn .input-email {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  footer .ft-child-section-1 .ft-child-section-1-right .email-container .email-btn .submit-btn {
+    font-size: 16px;
+  }
+  footer .ft-child-section-3 {
+    flex-direction: column;
+  }
+  footer .ft-child-section-3 h2 {
+    width: 100%;
+    font-size: 16px;
+  }
+  footer .ft-child-section-3 .terms-condition {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 394px) {
+  header .left-section {
+    height: 60vh;
+  }
+  header .left-section .left-section-child {
+    width: 90%;
+    margin: 70px auto;
+  }
+  header .left-section .left-section-child div h1 {
+    font-size: 20px;
+  }
+  header .left-section .left-section-child .book-now {
+    font-size: 16px;
+  }
+  header .left-section .navebar {
+    background-color: white;
+  }
+  header .left-section .navebar #logo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  header .left-section .navebar #logo img {
+    width: 50px;
+  }
+  header .left-section .navebar #logo span {
+    margin: auto 2px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  header .left-section .navebar #navbar {
+    display: none;
+    width: 70%;
+    margin: auto 0px;
+    top: 50px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+  }
+  header .left-section .navebar #navbar ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0px;
+  }
+  header .left-section .navebar #navbar ul li {
+    display: block;
+  }
+  header .left-section .navebar #navbar ul li a {
+    width: 100%;
+    padding: 20px;
+  }
+  header .left-section .navebar #navbar ul li a:hover {
+    background-color: rgb(215, 255, 246);
+    box-shadow: none;
+    border: none;
+  }
+  header .left-section .navebar #navbar ul li .active {
+    background-color: rgb(215, 255, 246);
+    border: 1px solid green;
+    box-shadow: none;
+  }
+  header .left-section .navebar .logo {
+    width: 25%;
+  }
+  header .right-section {
+    height: 50vh;
+  }
+  header .right-section nav {
+    height: 50px;
+    padding: 0px;
+    position: static;
+    float: left;
+    box-shadow: -10px 10px 0px orange;
+    display: none;
+  }
+  header .right-section nav ul {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    margin: 10px;
+  }
+  header .right-section nav ul li {
+    margin: 0px;
+    height: inherit;
+  }
+  header .right-section nav ul li i {
+    display: none;
+  }
+  header .right-section nav ul li a {
+    display: none;
+  }
+  header .right-section nav ul li .book-now {
+    height: inherit;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(2, 26, 20);
+    border: none;
+    background-color: transparent;
+  }
+  header .right-section .right-section-child {
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+  }
+  header .right-section .right-section-child p {
+    text-align: justify;
+    font-size: 12px;
+  }
+  header .right-section .right-section-child i {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+  header .right-section .over-image {
+    height: 30%;
+    top: 80%;
+    right: 50%;
+  }
+  header .right-section .circle1 {
+    float: right;
+  }
+  header .right-section .happy-comment-card {
+    top: 100%;
+    right: 33%;
+  }
+  header .right-section .happy-comment-card i {
+    font-size: 16px;
+    padding: 0px;
+  }
+  header .right-section .happy-comment-card div h2 {
+    font-size: 14px;
+  }
+  header .right-section .happy-comment-card div p {
+    font-size: 10px;
   }
   .faq-card {
     width: 90%;
