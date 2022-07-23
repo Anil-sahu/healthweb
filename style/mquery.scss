@@ -1,12 +1,5 @@
 @media (max-width: 1170px) {
-    .over-image {
-        top: 100%;
-        right: 35%;
-    }
-    .happy-comment-card {
-        top: 150%;
-        right: 33%;
-    }
+    
     header {
         flex-direction: column;
         .left-section {
@@ -15,6 +8,7 @@
             width: 100%;
             .navebar {
                 background-color: white;
+                width: inherit;
                 nav {
                     width: 75%;
                     margin: auto 0px;
@@ -32,8 +26,16 @@
         }
         .right-section {
             width: 100%;
+            height: 60vh;
             nav {
-                width: 50%;
+                width: fit-content;
+                position: absolute;
+                right: 0px;
+                top: 135%;
+                background-color: rgb(255, 208, 0);
+                box-shadow: 5px 5px 0px orange;
+                
+
             }
             .right-section-child {
                 width: 40%;
@@ -42,23 +44,27 @@
                 border-radius: 8px;
                 background-color: white;
                 padding: 20px;
-                margin-top: 10%;
+                margin-top: 20px;
+               
             }
         }
+    }
+    .over-image {
+        // position: static;
+        top: 90%;
+         right: 45%;
+        height: 60%;
+    }
+    .happy-comment-card {
+        // position: static;
+        top: 128%;
+        right: 45%;
     }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media (max-width: 768px) {
-    .over-image {
-        width: 50%;
-        height: 60%;
-        top: 100%;
-    }
-    .happy-comment-card {
-        top: 140%;
-        right: 33%;
-    }
+  
     header {
         flex-direction: column;
         .left-section {
@@ -112,8 +118,19 @@
             width: 100%;
             height: 70vh;
             nav {
-                width: 50%;
-                display: none;
+                width: fit-content;
+                right: 0px;
+                top: 145%;
+                li{
+                    margin:10px;
+                    i{
+                        color: rgb(3, 36, 27);
+                        background-color: white;
+                        padding: 5px;
+                    }
+
+                }
+              
             }
             .right-section-child {
                 width: 40%;
@@ -126,7 +143,17 @@
             }
         }
     }
-
+    .over-image {
+        // position: static;
+        top: 100%;
+         right: 45%;
+        height: 60%;
+    }
+    .happy-comment-card {
+        // position: static;
+        top: 128%;
+        right: 45%;
+    }
 
     
     footer {
@@ -264,7 +291,31 @@ header{
 
     .right-section{
         height: 70vh;
-      
+        nav{
+            height: fit-content;
+            padding: 0px;
+            ul{
+                 display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            height: fit-content;
+        margin: 10px;
+           li{
+    
+            margin: 10px 0px 0px;
+           }
+            li a{
+                font-size: 12px;
+            }
+            li button{
+                font-size: 12px;
+            }
+            }
+           
+        }
+        .right-section-child{
+            width: 60%;
+        }
     
         .over-image {
         width: 50%;
@@ -356,12 +407,12 @@ header{
             flex-direction: column;
             h2{
                 width: 100%;
-                font-size: 20px;
+                font-size: 16px;
                 
             }
             .terms-condition{
                 width: 100%;
-                margin-top: 20px;
+                margin-top: 12px;
             }
         }
     }

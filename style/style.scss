@@ -1,6 +1,6 @@
 $textColor: rgb(1, 11, 43);
 $bgcolor: white;
-$fgColor: rgb(0, 255, 191);
+$fgColor: rgb(194, 255, 245);
 $anchor: rgb(230, 253, 247);
 $btnColor: rgb(28, 49, 45);
 
@@ -9,20 +9,26 @@ $btnColor: rgb(28, 49, 45);
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 header {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    // justify-content: space-around;
+    width: 100%;
+ 
     .left-section {
         height: 90vh;
-
         width: 60%;
         background-color: white;
         .navebar {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            position: fixed;
+            background-color: white;
+            z-index: 200;
+            width: 60%;
 
             #logo {
                
@@ -90,31 +96,37 @@ header {
     }
 
     .right-section {
-        width: 40%;
+        width:40%;
         background-color: $fgColor;
         height: 90vh;
         overflow: clip;
 
         nav {
             width: 70%;
-            margin-top: 20px;
             float: right;
+            background-color: $fgColor;
+            position: fixed;height: 70px;
+            z-index: 200;
 
             ul {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                // justify-content: space-around;
+               
+                height: inherit;
 
                 li {
                     list-style: none;
+                    margin: auto 20px;
                     a {
                         text-decoration: none;
                         color: $textColor;
                     }
                 }
-                .book-now {
+                li{
+                   .book-now {
+                    display: block;
                     background-color: $btnColor;
-
                     padding: 8px 16px;
                     color: white;
                     border: 1px inset white;
@@ -122,8 +134,10 @@ header {
                 .book-now:hover {
                     // border-radius: 8px;
                     box-shadow: 0px 0px 10px rgb(153, 152, 152);
-                    background-color: rgba(55, 0, 156);
+                  
+                }   
                 }
+              
             }
         }
         .right-section-child {
@@ -164,12 +178,12 @@ header {
     position: absolute;
     display: block;
     // background-color: blue;
-    top: 10%;
+    top: 20%;
     right: 12%;
     display: flex;
     justify-content: center;
     width: 60%;
-    height: 80%;
+    height: 70%;
    
 }
 .bottum-card {

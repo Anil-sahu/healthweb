@@ -8,7 +8,7 @@
 header {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  width: 100%;
 }
 header .left-section {
   height: 90vh;
@@ -19,6 +19,10 @@ header .left-section .navebar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  z-index: 200;
+  width: 60%;
 }
 header .left-section .navebar #logo {
   display: flex;
@@ -81,36 +85,40 @@ header .left-section .navebar .logo {
 }
 header .right-section {
   width: 40%;
-  background-color: rgb(0, 255, 191);
+  background-color: rgb(194, 255, 245);
   height: 90vh;
   overflow: clip;
 }
 header .right-section nav {
   width: 70%;
-  margin-top: 20px;
   float: right;
+  background-color: rgb(194, 255, 245);
+  position: fixed;
+  height: 70px;
+  z-index: 200;
 }
 header .right-section nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  height: inherit;
 }
 header .right-section nav ul li {
   list-style: none;
+  margin: auto 20px;
 }
 header .right-section nav ul li a {
   text-decoration: none;
   color: rgb(1, 11, 43);
 }
-header .right-section nav ul .book-now {
+header .right-section nav ul li .book-now {
+  display: block;
   background-color: rgb(28, 49, 45);
   padding: 8px 16px;
   color: white;
   border: 1px inset white;
 }
-header .right-section nav ul .book-now:hover {
+header .right-section nav ul li .book-now:hover {
   box-shadow: 0px 0px 10px rgb(153, 152, 152);
-  background-color: rgb(55, 0, 156);
 }
 header .right-section .right-section-child {
   width: 50%;
@@ -145,12 +153,12 @@ header .right-section .circle1 {
 .over-image {
   position: absolute;
   display: block;
-  top: 10%;
+  top: 20%;
   right: 12%;
   display: flex;
   justify-content: center;
   width: 60%;
-  height: 80%;
+  height: 70%;
 }
 
 .bottum-card {

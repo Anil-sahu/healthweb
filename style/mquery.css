@@ -1,12 +1,4 @@
 @media (max-width: 1170px) {
-  .over-image {
-    top: 100%;
-    right: 35%;
-  }
-  .happy-comment-card {
-    top: 150%;
-    right: 33%;
-  }
   header {
     flex-direction: column;
   }
@@ -17,6 +9,7 @@
   }
   header .left-section .navebar {
     background-color: white;
+    width: inherit;
   }
   header .left-section .navebar nav {
     width: 75%;
@@ -33,9 +26,17 @@
   }
   header .right-section {
     width: 100%;
+    height: 60vh;
   }
   header .right-section nav {
-    width: 50%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 0px;
+    top: 135%;
+    background-color: rgb(255, 208, 0);
+    box-shadow: 5px 5px 0px orange;
   }
   header .right-section .right-section-child {
     width: 40%;
@@ -46,20 +47,20 @@
     border-radius: 8px;
     background-color: white;
     padding: 20px;
-    margin-top: 10%;
+    margin-top: 20px;
+  }
+  .over-image {
+    top: 90%;
+    right: 45%;
+    height: 60%;
+  }
+  .happy-comment-card {
+    top: 128%;
+    right: 45%;
   }
 }
 /* On screens that are 600px or less, set the background color to olive */
 @media (max-width: 768px) {
-  .over-image {
-    width: 50%;
-    height: 60%;
-    top: 100%;
-  }
-  .happy-comment-card {
-    top: 140%;
-    right: 33%;
-  }
   header {
     flex-direction: column;
   }
@@ -109,8 +110,19 @@
     height: 70vh;
   }
   header .right-section nav {
-    width: 50%;
-    display: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    right: 0px;
+    top: 145%;
+  }
+  header .right-section nav li {
+    margin: 10px;
+  }
+  header .right-section nav li i {
+    color: rgb(3, 36, 27);
+    background-color: white;
+    padding: 5px;
   }
   header .right-section .right-section-child {
     width: 40%;
@@ -122,6 +134,15 @@
     background-color: white;
     padding: 20px;
     margin-top: 10%;
+  }
+  .over-image {
+    top: 100%;
+    right: 45%;
+    height: 60%;
+  }
+  .happy-comment-card {
+    top: 128%;
+    right: 45%;
   }
   footer .ft-child-section-1 {
     flex-direction: column;
@@ -243,6 +264,32 @@
   header .right-section {
     height: 70vh;
   }
+  header .right-section nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0px;
+  }
+  header .right-section nav ul {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 10px;
+  }
+  header .right-section nav ul li {
+    margin: 10px 0px 0px;
+  }
+  header .right-section nav ul li a {
+    font-size: 12px;
+  }
+  header .right-section nav ul li button {
+    font-size: 12px;
+  }
+  header .right-section .right-section-child {
+    width: 60%;
+  }
   header .right-section .over-image {
     width: 50%;
     height: 50%;
@@ -316,10 +363,10 @@
   }
   footer .ft-child-section-3 h2 {
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
   }
   footer .ft-child-section-3 .terms-condition {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 12px;
   }
 }/*# sourceMappingURL=mquery.css.map */
